@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <title>Euro 2020 | News Squads Matches</title>
+    <link rel="stylesheet" type="text/css" href="euro2020.css">
+    <style>
+    	.grid {
+			display: grid;
+			grid-template-columns: 75% 25%;
+			grid-template-rows: 50px 200px 100px;
+			grid-gap: 1em;
+			}
+		.griditem2 {
+			background-color: black;
+		}
+		.gridaside
+			background: black;
+			color: black;
+		}
+		.wrapper {
+			background-image: url('background.jpeg');;
+
+		}
+    </style>
+</head>
+<body>
+
+	<div class="intro">
+		<h1>Euro 2020</h1>
+		<h1 class="typing">players</h1>
+	</div>
+	<a href="index.html"><img src="euro2020-logo.png" style="height: 200px; padding: 10px;"></a>
+	<section>
+		<header>
+			<a href="#" class="logo"><!----Heroes---></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;"></a></li>
+				<li><a href="#" style="--i:3;"></a></li>
+				<li><a href="#" style="--i:4;"></a></li>
+				<li><a href="#" style="--i:5;"></a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<img src="images/ronaldo.jpeg">
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<img src="foden portrait.jpeg">
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<img src="images/pogba.jpeg">
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<img src="rashford-portrait.jpeg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section>
+		<figure>
+			<iframe width="900" height="500" src="https://www.youtube.com/embed/kGT73GcwhCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<figcaption>
+				Official music video of euro 2020
+			</figcaption>
+		</figure>
+		<hr>
+		<div class="grid">
+		<main>
+			
+		</main>
+		<aside>
+			<h2>Group D</h2>
+			<h3>England</h3>
+			<p>Coach: Gareth Southgate<br>
+			Key player: Harry Kane<br>
+			One to watch: Jadon Sancho<br>
+			Qualifying: P8 W7 L1<br><br>
+
+			<h3>Croatia</h3>
+			<p>Coach: Zlatko Dalic<br>
+			Key player: Luka Modric<br>
+			One to watch: Josip Brekalo<br>
+			Qualifying: P8 W5 D2 L1<br><br>
+
+			<h3>Scotland</h3>
+			<p>Coach: Steve Clarke<br>
+			Key player: John Mcginn<br>
+			One to watch: Lyndon Dykes<br>
+			Qualifying: P10 W5 L5<br><br>
+
+			<h3>Czech Republic</h3>
+			<p>Coach: Jaroslav Silhavy<br>
+			Key player: Vladimar Darida<br>
+			One to watch: Tomas Soucek<br>
+			Qualifying: P5 W7 L3<br><br>
+
+			</p>
+		</aside>
+		<main>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZnMRP5dUURI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</main>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+	<script type="text/javascript" script src="euro2020.js"></script>
+</body>
+</html>

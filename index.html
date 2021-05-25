@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Euro 2020</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+	}
+
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 1px;
+  height: 5%;
+  border-right: 2px solid black;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* style the header*/
+.header {
+	padding: 80px;
+	text-align: center;
+	background-image: url("background.jpeg");
+	/*background: #1abc9c;*/
+	color: white;
+}
+
+/* increase h1 size */
+.header h1 {
+	font-size: 40px;
+}
+
+/*style top nav bar*/
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/*style nav bar links*/
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+/*right-aligned link*/
+.navbar a.right {
+	float: right;
+}
+
+/*change color on hover*/
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.last {
+  text-align: center
+}
+.w3-container {
+  text-align: center;
+}
+a.euro2020preview:link {
+  background-color: yellow;
+}
+
+a.euro2020preview:visited {
+  background-color: cyan;
+}
+
+a.euro2020preview:hover {
+  background-color: lightgreen;
+}
+
+a.euro2020preview:active {
+  background-color: hotpink;
+} 
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <img class="logo" img src="euro2020-logo.png" width="100px" height="100px" style="float:left">
+
+ 	<h1>Euro 2020</h1>
+	<p>A website dedicated to all things Euro 2020 and England...</p>
+</div>
+
+
+<div class="navbar">
+	<a href="schedule.html">Schedule</a>
+	<a href="euro2020.html">Euro2020</a>
+	<a href="england.html">England</a>
+  <a href="countdown/countdown.html">Countdown</a>
+	<a href="countdown/link.html" class="right">Coming Soon</a>
+</div>
+
+<!-- Slide Show -->
+<!--<section>
+  <img class="mySlides" src="germany squad.jpeg" style="width:25%">
+  <img class="mySlides" src="teams.jpeg" style="width:25%">
+  <img class="mySlides" src="uefa-euro-2020.jpeg" style="width:25% height:50%">
+</section> -->
+
+<div class="row">
+  <div class="side">
+    <h2>England</h2>
+    <h5>Squad:</h5>
+    <img class="uefa-euro-2020.jpeg" src="england_squad_photo.jpeg" style="width: 300px;">
+    <p style="text-align: center;"><b>TBC</b></p>
+    <p><b>Goalkeepers:</b></br>
+       <b>Defenders:</b></br>
+       <b>Midfielders:</b></br>
+       <b>Attackers:</b></br>
+
+    </p>
+    <h3><center>Stats</center></h3>
+    <p class="last">Last 3 Results</p>
+    <p>England 5 v 0 San Marino</br>
+       Albania 0 v 2 England</br>
+       England 2 v 1 Poland</br>
+    </p>
+    <div class="england-squad-photo.jpeg" style="height:60px;"></div><br>
+    <img class="action-shot-1.jpeg" src="action-shot-1.jpeg" style="width: 300px;"><br>
+    <img class="action-shot-2.jpeg" src="action-shot-2.jpeg" style="width: 300px;">
+  </div>
+  <div class="main">
+    <h2>Euro 2020 Ticketing</h2>
+    <h5>Latest updates on Euro 2020 ticketing announcement, May 22, 2021</h5>
+    <img class="ticketimg" src="./euro2020tickets.jpeg" style="height:300px; width: 600px;">
+    <p></p>
+    <p>Football fans of all countries are angered at Uefa's latest announcment informing fans their tickets have been cancelled.
+    </br></br> <a href="articles/euro-2020-ticket-info.html" class="euro2020preview">Latest News</a></p>
+    <br>
+    
+    <h2>EURO 2020 Preview</h2>
+    <h5>Complete Tournament Breakdown, May 21, 2021</h5>
+    <img class="euro2020preview" src="euro 2020 with dates.jpeg" style="height:300px; width: 600px;">
+    <p></p>
+    <p>A complete Euro 2020 preview detailing everything you need to know ahead of the big kick off...</br></br>
+    <a href="articles/euro-2020-preview.html" class="euro2020preview">EURO 2020 Preview</a>
+    </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Englandeuro20 @ 2021</h2>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://twitter.com/englandeuro20"><i class="fa fa-twitter fa-4x"></i></a>
+  <a href="https://instagram.com/englandeuro20"><i class="fa fa-instagram fa-4x"></i></a>
+  <p class="w3-medium">
+  </p>
+</footer>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
